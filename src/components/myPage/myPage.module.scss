@@ -1,0 +1,9 @@
+.epigram-wrap{
+  gap: 40px;
+}
+
+.title {
+  margin: 56px 0 24px;
+  color: $color-black-600;
+  @include pretendard-lg-16px-semibold;
+}

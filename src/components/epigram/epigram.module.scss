@@ -1,0 +1,34 @@
+.epigram-wrap{
+  gap: 40px;
+}
+
+.title {
+  margin: 56px 0 24px;
+  color: $color-black-600;
+  @include pretendard-lg-16px-semibold;
+}
+
+.new-epigram-btn{
+  position: fixed;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 32px;
+  height: 48px;
+  width: 100%;
+  background-color: $color-blue-900;
+  color: $color-blue-200;
+  border-radius: 100px;
+  border: none;
+  @include pretendard-md-14px-regular;
+
+  @include tablet {
+    width: 384px;
+
+
+  }
+
+  @include desktop {
+    width: 640px;
+  }
+}

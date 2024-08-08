@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('//fastly.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+
+$Pretendard: "Pretendard", sans-serif;
+
+@mixin pretendard-3xl-32px-bold {
+  font-family: $Pretendard;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+@mixin pretendard-2xl-24px-bold {
+  font-family: $Pretendard;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+@mixin pretendard-2xl-24px-semibold {
+  font-family: $Pretendard;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+@mixin pretendard-2xl-24px-medium {
+  font-family: $Pretendard;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+@mixin pretendard-2xl-24px-regular {
+  font-family: $Pretendard;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@mixin pretendard-xl-20px-semibold {
+  font-family: $Pretendard;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+@mixin pretendard-xl-20px-medium {
+  font-family: $Pretendard;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+@mixin pretendard-xl-20px-regular {
+  font-family: $Pretendard;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@mixin pretendard-lg-16px-semibold {
+  font-family: $Pretendard;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+@mixin pretendard-lg-16px-medium {
+  font-family: $Pretendard;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+@mixin pretendard-lg-16px-regular {
+  font-family: $Pretendard;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+@mixin pretendard-lg-14px-bold {
+  font-family: $Pretendard;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin pretendard-lg-14px-semibold {
+  font-family: $Pretendard;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@mixin pretendard-md-14px-medium {
+  font-family: $Pretendard;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@mixin pretendard-md-14px-regular {
+  font-family: $Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin pretendard-sm-13px-medium {
+  font-family: $Pretendard;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@mixin pretendard-xs-12px-semibold {
+  font-family: $Pretendard;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@mixin pretendard-xs-12px-regular {
+  font-family: $Pretendard;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@mixin Iropke-4xl-40px-medium {
+  font-family: 'Iropke Batang';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+@mixin Iropke-3xl-32px-medium {
+  font-family: 'Iropke Batang';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+@mixin Iropke-2xl-24px-medium {
+  font-family: 'Iropke Batang';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+@mixin Iropke-xl-20px-medium {
+  font-family: 'Iropke Batang';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@mixin Iropke-lg-16px-medium {
+  font-family: 'Iropke Batang';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+@mixin Iropke-md-14px-medium {
+  font-family: 'Iropke Batang';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin Iropke-xs-12px-medium {
+  font-family: 'Iropke Batang';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}

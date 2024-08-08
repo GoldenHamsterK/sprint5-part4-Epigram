@@ -15,11 +15,19 @@ import type {
   DeleteEpigramsLikeResponseType,
   EpigramsCommentsRequestType,
   EpigramsCommentsResponseType,
+  EpigramsRequestType,
 } from '@/schema/epigram';
 import httpClient from '.';
 
-export const epigrams = async (): Promise<EpigramsResponseType> => {
-  const response = await httpClient.post('/epigrams');
+export const epigrams = async (request: EpigramsRequestType): Promise<EpigramsResponseType> => {
+  const { tags, referenceUrl, referenceTitle, author, content } = request;
+  const response = await httpClient.post('/epigrams', {
+    tags,
+    referenceUrl,
+    referenceTitle,
+    author,
+    content,
+  });
   return response.data;
 };
 

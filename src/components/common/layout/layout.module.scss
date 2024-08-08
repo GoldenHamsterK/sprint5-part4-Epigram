@@ -1,0 +1,17 @@
+.layout{
+  margin: 0 auto ;
+  width: 312px;
+  padding: 94px 24px;
+
+  @include tablet {
+    width: 384px;
+
+
+  }
+
+  @include desktop {
+    width: 640px;
+  }
+}
+
+

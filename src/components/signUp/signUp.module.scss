@@ -1,0 +1,50 @@
+.signup-form-wrap{
+  width: 312px;
+  margin: 110px auto 312px;
+  display: flex;
+  flex-direction: column;
+  @include pretendard-md-14px-medium;
+
+  @include tablet {
+    width: 384px;
+    margin: 140px auto 316px;
+    @include pretendard-lg-16px-regular
+  }
+
+  @include desktop {
+    width: 640px;
+    margin: 160px auto 360px;
+    @include pretendard-xl-20px-medium
+  }
+}
+
+.signup-input-wrap {
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  label{
+    display: block;
+    margin-top: 20px;
+    
+    @include tablet {
+      margin-top: 40px;
+    }
+  }
+}
+
+.logo {
+  width: 172px;
+  height: 48px;
+  margin: 0 auto 50px;
+
+  @include tablet {
+    margin: 0 auto 50px;
+  }
+
+  @include desktop {
+    margin: 0 auto 80px;
+  }
+}

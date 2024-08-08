@@ -1,12 +1,12 @@
 import * as z from 'zod';
 
 export const EmotionLogTodayRequest = z.object({
-  emotion: z.literal('MOVED'),
+  emotion: z.string(),
 });
 
 export const EmotionLogTodayResponse = z.object({
   createdAt: z.string().datetime(),
-  emotion: z.literal('MOVED'),
+  emotion: z.string(),
   userId: z.number(),
   id: z.number(),
 });

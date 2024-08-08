@@ -5,6 +5,14 @@ const tags = z.object({
   id: z.number(),
 });
 
+export const EpigramsRequest = z.object({
+  tags: z.array(z.string()),
+  referenceUrl: z.string().optional(),
+  referenceTitle: z.string().optional(),
+  author: z.string(),
+  content: z.string(),
+});
+
 export const EpigramsResponse = z.object({
   likeCount: z.number(),
   tags,
@@ -19,13 +27,25 @@ export const EpigramsResponse = z.object({
 export const GetEpigramsRequest = z.object({
   limit: z.number(),
   cursor: z.number().optional(),
-  keyword: z.string(),
+  keyword: z.string().optional(),
   writerId: z.number().optional(),
 });
 
+const Epigrams = z.object({
+  likeCount: z.number(),
+  tags,
+  writerId: z.number(),
+  referenceUrl: z.string(),
+  referenceTitle: z.string(),
+  author: z.string(),
+  content: z.string(),
+  id: z.number(),
+});
+
 export const GetEpigramsResponse = z.object({
+  list: z.array(Epigrams),
   nextCursor: z.number(),
-  list: EpigramsResponse,
+  totalCount: z.number(),
 });
 
 export const GetEpigramsTodayResponse = z.object({
@@ -127,6 +147,7 @@ export const EpigramsCommentsResponse = z.object({
   list: z.array(EpigramItem),
 });
 
+export type EpigramsRequestType = z.infer<typeof EpigramsRequest>;
 export type EpigramsResponseType = z.infer<typeof EpigramsResponse>;
 export type GetEpigramsRequestType = z.infer<typeof GetEpigramsRequest>;
 export type GetEpigramsResponseType = z.infer<typeof GetEpigramsResponse>;

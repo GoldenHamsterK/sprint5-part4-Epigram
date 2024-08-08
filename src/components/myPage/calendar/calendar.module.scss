@@ -1,0 +1,18 @@
+.signin-form-wrap{
+  margin: 110px auto 0;
+  width: 312px;
+  display: flex;
+  flex-direction: column;
+  @include pretendard-md-14px-medium;
+
+  @include tablet {
+    width: 384px;
+    @include pretendard-lg-16px-regular
+  }
+
+  @include desktop {
+    width: 640px;
+    @include pretendard-xl-20px-regular
+  }
+}
+

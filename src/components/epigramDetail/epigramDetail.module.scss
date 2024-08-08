@@ -1,0 +1,66 @@
+.epigram-detail-wrap{
+  width: 100%;
+  position: relative;
+  padding: 24px 32px;
+  border-radius: 10px;
+  background-color: $color-blue-100;
+}
+
+.epigram-tags{
+  margin: 0;
+  color: $color-blue-400;
+  @include pretendard-lg-16px-regular
+}
+
+.epigram-content{
+  margin: 32px 0;
+  text-align: center;
+  color: $color-black-700;
+  @include Iropke-2xl-24px-medium 
+}
+
+.epigram-author{
+  color: $color-blue-400;
+  text-align: right;
+  @include Iropke-lg-16px-medium 
+}
+
+.btns{
+  margin-top: 40px;
+  display: flex;
+  gap:24px;
+  justify-content: center
+}
+
+.external-link-btn{
+  height: 48px;
+  padding: 6px 14px 6px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  border-radius: 100px;
+  background: #F2F2F2;
+
+  color: $color-gray-300;
+  @include pretendard-md-14px-regular 
+}
+
+.epigram-btn {
+  position: absolute;
+  right: 32px;
+  top: 24px;
+}
+
+.epigram-Edit{
+  border:none;
+  background: none;
+  color: $color-black-600;
+}
+ 
+.epigram-Delete{
+  border:none;
+  background: none;
+  color: $color-state;
+
+}

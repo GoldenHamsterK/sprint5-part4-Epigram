@@ -42,6 +42,12 @@ export const SignInResponse = z.object({
   accessToken: z.string(),
   refreshToken: z.string(),
   user: SignInUser,
+  error: z
+    .object({
+      status: z.number(),
+      message: z.string(),
+    })
+    .optional(),
 });
 
 export const RefreshTokenRequest = z.object({

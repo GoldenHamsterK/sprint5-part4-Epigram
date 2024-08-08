@@ -1,0 +1,55 @@
+.signin-form-wrap{
+  width: 312px;
+  margin: 110px auto 200px;
+  display: flex;
+  flex-direction: column;
+  @include pretendard-md-14px-medium;
+
+  @include tablet {
+    width: 384px;
+    margin: 160px auto 210px;
+    @include pretendard-lg-16px-regular
+  }
+
+  @include desktop {
+    width: 640px;
+    margin: 292px auto 356px;
+    @include pretendard-xl-20px-regular
+  }
+}
+
+.signin-input-wrap {
+  margin-bottom:20px;
+
+  @include desktop {
+    margin-bottom: 24px;
+  }
+
+  label{
+    margin-bottom: 16px;
+  }
+}
+
+.logo {
+  width: 172px;
+  height: 48px;
+  margin: 0 auto 50px;
+
+  @include tablet {
+    margin: 0 auto 60px;
+  }
+}
+
+.signup-link {
+  margin-top: 11px;
+  margin-left: auto;
+  color: $color-blue-400;
+
+  button {
+    border: none;
+    background-color: transparent;
+    color: $color-black-500;;
+    text-decoration-line: underline;
+    cursor : pointer;
+  }
+}

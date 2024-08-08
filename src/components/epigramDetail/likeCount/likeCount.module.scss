@@ -1,0 +1,11 @@
+.like-btn{
+  display: flex;
+  padding: 6px 14px;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  border-radius: 100px;
+  background: $color-black-600;
+  color: $color-blue-100;
+  @include pretendard-lg-14px-semibold 
+}
